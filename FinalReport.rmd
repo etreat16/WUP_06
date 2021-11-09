@@ -181,5 +181,7 @@ fisherXY(mydata$cappun,mydata$race)
    
 As per the results above, we could clearly see that there is really a difference between "white" and "black" and "other" and "black". Since the p-value between "white" and "other" is high, we could safely assume that there is little difference between "white" and "other" in their preference of capital punishment.
 # Discussion and Conclusion
-
+  
+  
+The branch named "number2" shows that there is no noticable difference between "other" and "white" but showed a great deal of difference between the "black" and the other 2 groups. In comparison with the branch named "master", there is a noticable difference between the 3 groups. 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
