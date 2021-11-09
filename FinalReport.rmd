@@ -61,6 +61,8 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
+   
 As per the graph above, which is called a percentage plot. According to the races, "white" and "other" around 65% approved while 35% opposed capital punishemnt. While around 50% of the race "black" opposed capital punshiment and 50% approved. The race "black" take's front and center.
 
 
@@ -79,6 +81,10 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
+  
+The numerical descriptive results helps reinforce the data from the graphical results. As per the graph, almost 68% of both "white" and "other" races are in favor of capital punishment while 31% oppose it. 
+
+While around, 50% of the "black" favors it and 50% disapproves.
 
 ## Inferential Results
 
@@ -95,6 +101,11 @@ chisqtestGC(table2)
 fisher.test(table2)
 #fisherXY(mydata$race,mydata$cappun)
 ```
+
+  
+  We made a chi sq test to see if there is any difference between the races' opinion on capital punishment. 
+The major contribution came from the "black" race on the chi sq test as per the table above.
+
 ```{r}
 fisherXY = function(x, y, confL = 0, printAll=FALSE){
   # Inputs: 
@@ -165,8 +176,10 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 ```{r}
 fisherXY(mydata$cappun,mydata$race)
 ```
- 
-
+   
+   
+   
+As per the results above, we could clearly see that there is really a difference between "white" and "black" and "other" and "black". Since the p-value between "white" and "other" is high, we could safely assume that there is little difference between "white" and "other" in their preference of capital punishment.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
